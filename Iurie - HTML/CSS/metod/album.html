@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #333;
+            text-align: center;
+            margin-top: 100px;
+        }
+        figure{
+            height: 0;
+            margin: 0;
+        }
+        img{
+            border: 20px solid #ddd;
+            box-shadow: 0 0 10px 5px #111;
+        }
+        img:hover{
+            border-color: #fff;
+        }
+        .left-30{
+            transform: translateX(300px) rotate(30deg);
+        }
+        .left-30:hover{
+            transform: translateX(0px) rotate(0deg);
+            transition: 2s;
+            transition-delay: 0.2s;
+        }
+        .poza1{
+            transform: translateX(-600px) rotate(-30deg) ;
+        }
+        .poza1:hover{
+            transform: translateX(0px) rotate(0deg);
+            transition: 2s;
+            transition-delay: 0.2s;
+        }
+        .poza2{
+            transform: translateX(-300px) rotate(70deg);
+        }
+        .poza2:hover{
+            transform: translateX(0px) rotate(0deg);
+            transition: 2s;
+            transition-delay: 0.2s;
+        }
+        .poza3{
+            transform: translateX(0px) rotate(60deg);
+        }
+        .poza3:hover{
+            transform: translateX(0px) rotate(0deg);
+            transition: 2s;
+            transition-delay: 0.2s;
+        }
+        .poza4{
+            transform: translateX(600px) rotate(120deg);
+        }
+        .poza4:hover{
+            transform: translateX(0px) rotate(0deg);
+            transition: 2s;
+            transition-delay: 0.2s;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <main id="content">
+        <figure><img class="poza1" src="http://picsum.photos/300/400?image=542"></figure>
+        <figure><img class="poza2" src="http://picsum.photos/400/300?image=535"></figure>
+        <figure><img class="poza3" src="http://picsum.photos/500/400?image=555"></figure>
+        <figure><img class="poza4" src="http://picsum.photos/500/300?image=565"></figure>
+        <figure><img class="left-30" src="http://picsum.photos/300/500?image=575"></figure>
+    </main>
+
+</body>
+</html>
