@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Transfer</title>
+</head>
+<body>
+
+    <form action="thx.html">
+        <h1 align="center">Money Transfer</h1>
+        <br>
+        <table border="1" width="800" align="center" cellpadding="10">
+            <tr>
+                <td colspan="2">
+                    <h2>Sender:</h2>
+                    <hr>
+                    <label></label>
+                        First name:
+                        <input type="text">
+                    </label>
+                    <br>
+                    <label>
+                        Last name:
+                        <input type="text">
+                    </label>
+                    <br>
+                    <label>
+                        Select contry:
+                        <select>
+                            <option>Moldova</option>
+                            <option>Romania</option>
+                            <option>Ucraina</option>
+                            <option>Russia</option>
+                            <option>China</option>
+                            <option>Japan</option>
+                            <option>Bulgaria</option>
+                            <option>Georgia</option>
+                            <option>Ghitza fata mare</option>
+
+                        </select>
+                    </label>
+                    <label>
+                        Select City
+                        <select>
+                            <option>Nisporeni</option>
+                            <option>Chisinau</option>
+                            <option>Orhei</option>
+                            <option>New York</option>
+                        </select>
+                    </label>
+                    <label>
+                        Street & no:
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        Current Date:
+                        <input type="date">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Receiver:</h2>
+                    <hr>
+                    <label></label>
+                        First name:
+                        <input type="text">
+                    </label>
+                    <br>
+                    <label>
+                        Last name:
+                        <input type="text">
+                    </label>
+                    <br>
+                    <label>
+                        Select contry:
+                        <select>
+                            <option>Moldova</option>
+                            <option>Romania</option>
+                            <option>Ucraina</option>
+                            <option>Russia</option>
+                            <option>China</option>
+                            <option>Japan</option>
+                            <option>Bulgaria</option>
+                            <option>Georgia</option>
+                            <option>Ghitza fata mare</option>
+
+                        </select>
+                    </label>
+                    <label>
+                        Select City
+                        <select>
+                            <option>Nisporeni</option>
+                            <option>Chisinau</option>
+                            <option>Orhei</option>
+                            <option>New York</option>
+                        </select>
+                    </label>
+                    <label>
+                        Street & no:
+                        <input type="text">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        Receiver Date:
+                        <input type="date">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Amount:
+                        <input type="number" min="10" max="1000000">
+                        <br>
+                        <small> <i>*The amount must between 10..1000000</i> </small>
+                    </label>
+                </td>
+                <td>
+                    <label> 
+                        Curency:
+                        <input list="val" type="text">
+                        <datalist id="val"> 
+                            <option value="EUR"></option>
+                            <option value="USD"></option>
+                            <option value="MDL"></option>
+                            <option value="RON"></option>
+                        </datalist>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" required >
+                        I agree with the termens and conditions of this service.
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <button>SEND</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
