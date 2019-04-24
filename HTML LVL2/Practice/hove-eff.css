@@ -1,0 +1,81 @@
+body{
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+figure{
+    background-image: url(https://picsum.photos/id/237/600/600);
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px 10px #222;
+    transition: 1s;
+    background-size: 100%;
+    background-position: center;
+}
+figure img{
+    border-radius: 100%;
+    box-shadow: 0 0 10px 10px #222;
+    border: 2px solid white;
+    transform: translateX(50px) translateY(50px);
+}
+figcaption h2{
+    font-size: 50px;
+    transform: translateX(164px) translateY(-75px);
+    background-color:#5555558a; 
+    width: 380px; 
+    padding: 2px;
+    animation: slide-in-h2 2s;
+}
+figcaption>p:nth-child(2){
+    transform: translateX(164px) translateY(-110px);
+    background-color: #5555558c;
+    width: 380px; 
+    padding: 2px;
+    animation: slide-in-p1 3s;
+}
+figcaption>p:nth-child(3){
+    transform: translateX(410px) translateY(260px);
+    color: rgb(41, 6, 6);
+}
+p a{
+    color: rgb(49, 15, 15);
+}
+
+/* figcaption h2{
+    font-size: 50px;
+    transform: translateX(164px) translateY(-75px);
+    background-color:#5555558a; 
+    width: 380px; 
+    padding: 2px;
+}
+figcaption>p:nth-child(2){
+    transform: translateX(164px) translateY(-110px);
+    background-color: #5555558c;
+    width: 380px; 
+    padding: 2px;
+}
+figcaption>p:nth-child(3){
+    transform: translateX(410px) translateY(260px);
+    color: rgb(41, 6, 6);
+} */
+
+@keyframes slide-in-h2{
+    from{
+        transform: translateX(700px) translateY(-75px);
+    }
+    to{
+        transform: translateX(164px) translateY(-75px);
+    }
+}
+@keyframes slide-in-p1{
+    from{
+        transform: translateX(700px) translateY(-110px);
+    }
+    to{
+        transform: translateX(164px) translateY(-110px);
+    }
+}
+figure:hover{
+    background-size: 110%;
+}
