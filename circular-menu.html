@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Circular menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style>
+        
+        /* reset */
+        body,ul{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-size: 16px;
+        }
+        /* menu style */
+         body{
+            background-color: #333;
+        }
+        .round-menu{
+            height: 400px;
+            width: 400px;
+            border: 1px red solid;
+            margin: 300px;
+        }
+       
+        .round-menu li{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(16, 144, 38);
+            position: absolute;
+            transform: skewX(45deg);
+            transform-origin: 0 0;
+            overflow: hidden;
+
+        }
+        .round-menu a{
+            color: white;
+            height: 400px;
+            width: 400px;
+            background-color: #444;
+            display: block;
+            border-radius: 100%;
+            opacity: 0.5;
+            position: absolute;
+            left: -200px;
+            top: -200px;
+            transform: skewX(-45deg);
+        }
+        .round-menu a:hover{
+            background-color: red;
+        }
+        .round-menu i{
+            position: absolute;
+            top: 250px;
+            left: 320px;
+        }
+        .round-menu li:nth-child(1){
+            transform:rotate(0deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(2){
+            transform: rotate(45deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(3){
+            transform: rotate(90deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(4){
+            transform: rotate(135deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(5){
+            transform: rotate(180deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(6){
+            transform: rotate(225deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(7){
+            transform: rotate(270deg) skewX(45deg) ;
+            
+        }
+        .round-menu li:nth-child(8){
+            transform: rotate(315deg) skewX(45deg) ;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="round-menu">
+        <ul>
+            <li><a href=""><i class="fab fa-bluetooth"></i></a></li>
+            <li><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
+            <li><a href=""><i class="fas fa-volume-up"></i></a></li>
+            <li><a href=""><i class="fas fa-sun"></i></a></li>
+            <li><a href=""><i class="fas fa-phone"></i></a></li>
+            <li><a href=""><i class="fas fa-comment-alt"></i></a></li>
+            <li><a href=""><i class="fas fa-wifi"></i></a></li>
+            <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+            <li class="center"><a href=""><i class="fab fa-bluetooth"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
